@@ -50,12 +50,14 @@ const Home = () => {
             onKeyPress={subirlista}
           />
           <br />
-          <br />
+          <label htmlFor="exampleFormControlInput1" className="form-label">
+            TASKS
+          </label>
           <input
             type="text"
             className="form-control"
             id="exampleFormControlInput1"
-            placeholder= {"te faltan "+[listaDeTareas.length]+" items"}
+            placeholder= {[listaDeTareas.length]==0? "There no tasks": "te faltan "+[listaDeTareas.length]+" tareas"}
             disabled
           />
         </div>
