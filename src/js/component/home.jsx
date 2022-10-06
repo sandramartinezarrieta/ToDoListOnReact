@@ -69,8 +69,7 @@ const Home = () => {
               {listaDeTareas.map((item, i) => (
                 <li className="list-group-item d-flex justify-content-between align-items-center" key={i}>
                   {item} &nbsp;&nbsp;&nbsp;
-                  <button className=" btn btn-primary rounded-pill float-end" onClick={() => deleteItem(i)}>
-                    X
+                  <button className=" btn btn-primary rounded-pill float-end btn-close" onClick={() => deleteItem(i)}>
                   </button>
                 </li>
               ))}
